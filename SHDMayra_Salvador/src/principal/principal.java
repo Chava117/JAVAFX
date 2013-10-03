@@ -25,6 +25,7 @@ public class principal extends Application {
 		escena.getStylesheets().add(principal.class.getResource("../vista/estilos/estilo.css").toExternalForm());
 		primaryStage.setScene(escena);
 		primaryStage.show();
+		//Hola
 	}
 
 	public static void main(String[] args) {
