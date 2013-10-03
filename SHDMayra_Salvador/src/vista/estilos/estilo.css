@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#60a2c9, #990000);
+    -fx-effect: dropshadow( three-pass-box, rgba(0,0,8,0.9) , 5, 0.0 , 0 , 1 );
+}
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #91a2b1);
+}
+.root {
+    -fx-background-image: url('fondo.jpg');
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="429.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="vista.controlador.ControladorCarrera">
+  <children>
+    <ToolBar layoutX="0.0" layoutY="0.0" prefHeight="39.0" prefWidth="429.0">
+      <items>
+        <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardar" prefWidth="89.0" text="Guardar" />
+        <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#Eliminar" prefWidth="101.0" text="Eliminar" />
+        <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#modificar" prefWidth="112.0" text="Modificar" />
+        <Button fx:id="btnCancelar" mnemonicParsing="false" prefWidth="89.0" text="Cancelar" onAction="#Cancelar" />
+      </items>
+    </ToolBar>
+    <Pane layoutX="4.0" layoutY="39.0" prefHeight="529.0" prefWidth="429.0">
+      <children>
+        <Label fx:id="lblNombre" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="67.0" text="Nombre" />
+        <Label fx:id="btnSiglas" layoutX="14.0" layoutY="57.0" prefHeight="30.0" prefWidth="53.0" text="Siglas" />
+        <Label fx:id="lblJefe" layoutX="13.0" layoutY="108.0" prefHeight="21.0" prefWidth="112.0" text="Jefe de Carrera" />
+        <Label fx:id="lblMatricula" layoutX="13.0" layoutY="150.0" prefHeight="21.0" prefWidth="67.0" text="Matrícula" />
+        <Label fx:id="lblAcreditado" layoutX="13.0" layoutY="192.0" prefHeight="30.0" prefWidth="75.0" text="Acreditado" />
+        <TextField fx:id="txtNombre" layoutX="124.0" layoutY="22.0" prefWidth="239.0" />
+        <TextField fx:id="txtSiglas" layoutX="124.0" layoutY="72.0" prefWidth="239.0" />
+        <TextField fx:id="txtJefe" layoutX="124.0" layoutY="118.0" prefWidth="239.0" />
+        <TextField fx:id="txtMatricula" layoutX="124.0" layoutY="161.0" prefWidth="239.0" />
+        <ComboBox fx:id="cboAcreditado" layoutX="124.0" layoutY="202.0" prefHeight="21.0" prefWidth="101.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Si" />
+              <String fx:value="No" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <TableView fx:id="jtbCarrera" layoutX="-4.0" layoutY="247.0" prefHeight="268.0" prefWidth="429.0">
+          <columns>
+            <TableColumn prefWidth="75.0" text="Nombre" fx:id="colNombre" />
+            <TableColumn prefWidth="75.0" text="Siglas" fx:id="colSiglas" />
+            <TableColumn prefWidth="75.0" text="Jefe" fx:id="colJefe" />
+            <TableColumn prefWidth="75.0" text="Matricula" fx:id="colMatricula" />
+            <TableColumn prefWidth="75.0" text="Acreditado" fx:id="colAcreditado" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="99.0" text="Id" visible="false" fx:id="colId" />
+          </columns>
+        </TableView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
