@@ -10,6 +10,7 @@ import javafx.collections.ObservableList;
 import modelo.conexion;
 
 public class alumno {
+	/*hola*/
 	
 	private String nombre,apaterno,amaterno,fecha,sexo, carrera;
 	private int id;
